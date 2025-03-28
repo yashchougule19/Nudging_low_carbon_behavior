@@ -1,0 +1,24 @@
+name: "NILM Prediction"
+version: "1.0"
+slug: "nilm_prediction"
+description: "An add-on to predict appliance-level energy consumption using NILM."
+arch:
+  - aarch64
+  - amd64
+  - armv7
+startup: "application"
+boot: "auto"
+hassio_api: true
+homeassistant_api: true
+options: {}
+schema: {}
+ports:
+  "5000/tcp": 5000
+map:
+  - config
+  - ssl
+  - addons
+  - backup
+  - share
+  - media
+webui: "http://[HOST]:5000"
